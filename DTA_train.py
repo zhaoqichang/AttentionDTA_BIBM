@@ -1,5 +1,4 @@
 import tensorflow as tf
-import pandas as pd
 import numpy as np
 import DTA_model as model
 # from tensorflow.python.client import timeline
