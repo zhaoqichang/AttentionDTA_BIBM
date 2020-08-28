@@ -19,15 +19,10 @@ Dependencies:
 ## Resources:
 + README.md: this file.
 + tfrecord: The original data set and data set processing code are saved in this folder.
-	+ davis_div.txt: Under the 5-fold cross-validation setting, there is a division of the training set and the test set of the davis data set.
-/davis/folds/test_fold_setting1.txt,train_fold_setting1.txt; data/davis/Y,ligands_can.txt,proteins.txt
-  data/kiba/folds/test_fold_setting1.txt,train_fold_setting1.txt; data/kiba/Y,ligands_can.txt,proteins.txt
-  These file were downloaded from https://github.com/hkmztrk/DeepDTA/tree/master/data
-+ pretrained: models trained by the proposed framework 
-
-##  source codes:
-+ create_data.py: create data in pytorch format
-+ utils.py: include TestbedDataset used by create_data.py to create data, and performance measures.
-+ predict_with_pretrained_model.py: run this to predict affinity for testing data using models already trained stored at folder pretrained/
-+ training.py: train a GraphDTA model.
-+ models/ginconv.py, gat.py, gat_gcn.py, and gcn.py: proposed models GINConvNet, GATNet, GAT_GCN, and GCNNet receiving graphs as input for drugs.
+	+ davis_div.txt: Under the 5-fold cross-validation setting, there is a division of the training set and the test set of the davis dataset.
+	+ kiba_div.txt: Under the 5-fold cross-validation setting, there is a division of the training set and the test set of the kiba dataset.
+	+ davis_str_all.txt
+	+ kiba_str_all.txt
+	+ dataset.py: create data in tfrecord format according to (kiba/davis)_div.txt
++ DTA_train.py: train a AttentionDTA model.
++ DTA_model.py: AttentionDTA model architecture
