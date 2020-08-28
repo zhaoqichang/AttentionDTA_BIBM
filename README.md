@@ -5,7 +5,9 @@ This repository contains the source code and the data.
 
 ## AttentionDTA
 
-![](model.png)
+<div align="center">
+<p><img src="model.jpg" width="600" /></p>
+</div>
 
 ## Setup and dependencies 
 
