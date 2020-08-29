@@ -26,3 +26,16 @@ Dependencies:
 	+ dataset.py: create data in tfrecord format according to (kiba/davis)_div.txt
 + DTA_train.py: train a AttentionDTA model.
 + DTA_model.py: AttentionDTA model architecture
+
+
+# Step-by-step running:
+
+## 1. Create data in tfrecord format
+python dataset.py
+
+## 2. Train a prediction model
+python DTA_train.py
+To train a model using training data. 
+
+## 3. Predict affinity with pretrained models
+python DTA_test.py
